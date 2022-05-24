@@ -50,7 +50,7 @@ const Navbar = ( { toggle } ) => {
           </NavLink>
         </NavMenu>
         <NavBtn>
-          <NavBtnLink onClick={() => { setOpenModal(true) }}>
+          <NavBtnLink onClick={() => alert("Funcionalidade em desenvolvimento! para agendar sua visita envie um email para : escolainfantilalgodaodoce@hotmail.com ou fale conosco pelo CHAT.")}>
           <Calendar/> Agende sua visita
           </NavBtnLink>
         </NavBtn>

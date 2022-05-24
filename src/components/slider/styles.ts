@@ -7,16 +7,11 @@ export const SliderItem = styled.div`
   justify-content: center;
   outline: none;
 
-  img {
-    width: 100%;
-    height: 100%;
-    min-height: 250px;
-    object-fit: fill;
-    text-align: center;
-  }
+  height: 600px;
 
   @media(max-width: 800px) {
-   min-height: 250px;
+   height: 17vh;
+   width: 100vw;
   }
 
 `;

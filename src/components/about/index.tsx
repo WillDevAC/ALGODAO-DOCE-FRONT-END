@@ -8,8 +8,6 @@ import {
    Paragraph,
    About,
    Image,
-   ButtonContainer,
-   BtnBlue
   } from './styles';
 
 const about = () => {
@@ -32,9 +30,6 @@ const about = () => {
               contribuindo para a expensão das suas capacidades de comunicação, autonomia, interação social, domínio do espaço
               físico e do próprio corpo, pensamento, ética e estética.
             </Paragraph>
-            <ButtonContainer>
-              <BtnBlue>Veja nossa história</BtnBlue>
-            </ButtonContainer>
           </Text>
         </Grid>
       </About>

@@ -6,15 +6,15 @@ import { SliderItem } from "./styles";
 
 import { settings } from "../../utils/sliderconfig";
 
+import Image from 'next/image'
+
 const slider: React.FC = () => {
   return (
     <div id="home" className="home">
       <Slider {...settings}>
         <SliderItem>
-          <img src="images/mainslider2.webp" alt="Turno Inverso, matrículas abertas" />
-        </SliderItem>
-        <SliderItem>
-          <img src="images/mainslider1.webp" alt="Turno Inverso, matrículas abertas" />
+          <Image src="/images/mainslider1.png" alt="Turno Inverso, matrículas abertas" layout="fill" objectFit='none' priority/>
+          <Image src="/images/mainslider2.png" alt="Turno Inverso, matrículas abertas" layout="fill" objectFit='none' priority/>
         </SliderItem>
       </Slider>
     </div>

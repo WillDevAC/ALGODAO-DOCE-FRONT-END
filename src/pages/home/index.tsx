@@ -1,3 +1,6 @@
+
+import React, { useEffect } from 'react';
+
 import Head from "next/head";
 
 import Slider from '../../components/slider'
@@ -18,9 +21,10 @@ import Footer from "../../components/footer";
 
 import LayoutFragment from "../../components/layout";
 
+import Script from 'next/script'
 
-const home: React.FC = () => {
 
+const home = () => {
   return (
     <>
       <Head>
@@ -36,6 +40,7 @@ const home: React.FC = () => {
         <After_Hours/>
         <Activities/>
         <Footer/>
+        <Script src='/services/chat.js'/>
       </LayoutFragment>
     </>
   );
