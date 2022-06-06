@@ -2,13 +2,8 @@ import React, { useEffect } from 'react';
 
 import { PartnersContainer, PartnersBox, TitlePartner } from '../../templates/home/styles'
 
-interface IPartners{
-    title: string;
-    description: string;
-    action?: string;
-}
 
-const partners: React.FC<IPartners> = () => {
+const partners: React.FC= () => {
   return ( 
     <>
         <TitlePartner>Nossos Parceiros</TitlePartner>
