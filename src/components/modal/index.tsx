@@ -11,7 +11,15 @@ import {
 
 import { BtnPink } from '../dashboard/card/styles'; 
 
+import Router from 'next/router'
+
+
 const modal = ( { closeModal } ) => {
+
+  const handleAgendVisit = () => {
+    Router.push('https://api.whatsapp.com/send?phone=555551982599753&text=Ol%C3%A1%20gostaria%20de%20agendar%20uma%20visita%21');
+  }
+
   return (
     <ModalBackground>
         <ModalContainer>
@@ -34,7 +42,7 @@ const modal = ( { closeModal } ) => {
                 </form>
             </Body>
             <Footer>
-                <BtnPink onClick={() => alert("Funcionalidade em desenvolvimento")}>Agendar visita</BtnPink>
+                <BtnPink onClick={() => handleAgendVisit()}>Agendar visita</BtnPink>
             </Footer>
         </ModalContainer>
     </ModalBackground>

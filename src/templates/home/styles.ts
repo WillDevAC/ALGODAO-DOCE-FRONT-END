@@ -23,7 +23,7 @@ export const Title = styled.h1<Props>`
   color: black;
   align-self: ${props => props.align_self == 'left' ? 'left' : 'center'};
   padding-bottom: 1rem;
-  color: ${props => props.color /*Propriedade*/ == 'primary' ? '#DE80B0' : 'white'}; //Condição pro input da prop
+  color: ${props => props.color /*Propriedade*/ == 'primary' ? '#DE80B0' : 'white'}; 
 
   @media screen and (max-width: 1280px) {
     padding-left: 0;
@@ -33,3 +33,47 @@ export const Title = styled.h1<Props>`
     font-size: 2rem;
   }
 `;
+
+
+export const PartnersContainer = styled.div `
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  height: 300px;
+  gap: 15px;
+
+  @media screen and (max-width: 645px) {
+    flex-direction: column;
+  }
+`
+
+export const PartnersBox = styled.div `
+  width: 20%;
+  height: 60%;
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+
+
+  img{
+    height: 50%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    
+  }
+`
+
+export const TitlePartner = styled.div `
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  color: #de80b0;
+  font-size: 35px;
+  font-weight: bold;
+`

@@ -25,6 +25,10 @@ const Navbar = ( { toggle } ) => {
     router.push('/dashboard');
   }
 
+  const setOpenHandleModal = () => {
+    router.push('https://api.whatsapp.com/send?phone=555551982599753&text=Ol%C3%A1%20gostaria%20de%20agendar%20uma%20visita%21');
+  }
+
   return (
     <>
       <Nav id="header" className="header">
@@ -50,7 +54,7 @@ const Navbar = ( { toggle } ) => {
           </NavLink>
         </NavMenu>
         <NavBtn>
-          <NavBtnLink onClick={() => alert("Funcionalidade em desenvolvimento! para agendar sua visita envie um email para : escolainfantilalgodaodoce@hotmail.com ou fale conosco pelo CHAT.")}>
+          <NavBtnLink onClick={() => setOpenHandleModal()}>
           <Calendar/> Agende sua visita
           </NavBtnLink>
         </NavBtn>

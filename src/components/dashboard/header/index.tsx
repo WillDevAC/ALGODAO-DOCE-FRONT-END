@@ -1,4 +1,4 @@
-import { useRouter } from 'next/router'; //Contexto Router controle de todas as rotas
+import { useRouter } from 'next/router';
 import React from 'react';
 
 import { 
@@ -11,18 +11,24 @@ import {
 } from './styles';
 
 const header = ({ toggle }) => {
-  const router = useRouter()  // atribuindo useRouter a uma constante (todas as funções)
-                              // Chamando o contexto
+  const router = useRouter() 
+
   const handleRedirect = () => {
     router.push("/")
+  }
+
+  const handleClickImageInLogo = () => {
+    router.push('/');
   }
 
   return (
     <Container>
       <Header>
-        <Logo>
-          <img src="/images/logo.webp" alt="" />
-        </Logo>
+        <div onClick={() => handleClickImageInLogo()}>
+          <Logo>
+            <img src="/images/logo.webp" alt="" />
+          </Logo>
+        </div>
         <Hamburger onClick={toggle}/>
         <Disconnect onClick={() => handleRedirect()}>
           <LogOut/>

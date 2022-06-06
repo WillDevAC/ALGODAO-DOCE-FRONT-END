@@ -11,10 +11,6 @@ export const Icons = styled.div`
 
 export const Logo = styled.div`
   display: block;
-
-  @media screen and (max-width: 650px) {
-    order: 2;
-  }
 `;
 
 export const Container = styled.div`
@@ -22,15 +18,17 @@ export const Container = styled.div`
   justify-content: space-around;
   align-items: center;
   padding: 0.5% 0;
+  
+  background-color: #26c7d9;
 
   img {
-    width: 350px;
+    width: 250px;
   }
 
   a {
     margin: 0 20px;
     font-size: 3rem;
-    color: #DE80B0;
+    color: white;
     transition: 0.1s;
 
     &:hover {
