@@ -61,9 +61,6 @@ export const PartnersBox = styled.div `
 
   img{
     height: 50%;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    
   }
 `
 

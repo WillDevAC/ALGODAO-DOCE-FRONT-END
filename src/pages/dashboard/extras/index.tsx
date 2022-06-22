@@ -20,7 +20,7 @@ const extras: React.FC = () => {
             <Card Title='Lista de materiais Jardim II' Date="03/03/2022" Link='/extras/jardim2.pdf'></Card>
           </Container>
           <Container>
-            <Card Title='Tabela de preços' Date="03/03/2022" Link='/extras/tabela.pdf'></Card>
+            <Card Title='Tabela de preços (ATUALIZADO)' Date="22/06/2022" Link='/extras/tabela.pdf'></Card>
             <Card Title='Lista de materiais Maternal II' Date="03/03/2022" Link='/extras/maternal2.pdf'></Card>
           </Container>
         </LayoutDashboard>
