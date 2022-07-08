@@ -30,7 +30,7 @@ const dashboard: React.FC = () => {
       </Head>
       <LayoutDashboard>
         <Card Title="Cardápio Berçário" Date="06/06/2022" Link="menus/bercario.xlsx"/>
-        <Card Title="Cardápio Junho" Date="06/06/2022" Link="menus/junho.xlsx"/>
+        <Card Title="Cardápio Julho" Date="06/06/2022" Link="menus/julho.xlsx"/>
       </LayoutDashboard>
     </>
   );
