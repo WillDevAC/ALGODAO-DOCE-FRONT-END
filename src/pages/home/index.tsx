@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Head from "next/head";
 
@@ -23,16 +23,26 @@ import Partners from '../../components/partners'
 
 import LayoutFragment from "../../components/layout";
 
-import Script from 'next/script'
-
+import ModalVideo from 'react-modal-video'
 
 const home = () => {
+
+  const [isOpen, setOpen] = useState(false)
+
+  useEffect(() => {
+    setOpen(true);
+  }, [])
+
+
   return (
     <>
       <Head>
         <title>Algodão Doce Canoas | Página Principal</title>
         <link rel="shortcut icon" href="icons/logo.ico"/>    
       </Head>
+
+      <ModalVideo channel='youtube' isOpen={isOpen} videoId="L61p2uyiMSo" onClose={() => setOpen(false)} />
+
       <LayoutFragment>
         <Slider/>
         <About/>
@@ -43,7 +53,6 @@ const home = () => {
         <Activities/>
         <Partners/>
         <Footer/>
-        <Script src='/services/chat.js'/>
       </LayoutFragment>
     </>
   );
