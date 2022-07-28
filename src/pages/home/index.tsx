@@ -41,7 +41,7 @@ const home = () => {
         <link rel="shortcut icon" href="icons/logo.ico"/>    
       </Head>
 
-      <ModalVideo channel='youtube' isOpen={isOpen} videoId="Vz8RcHH9TOY" onClose={() => setOpen(false)} />
+      <ModalVideo channel='youtube' isOpen={isOpen} autoplay videoId="Vz8RcHH9TOY" onClose={() => setOpen(false)} />
 
       <LayoutFragment>
         <Slider/>
