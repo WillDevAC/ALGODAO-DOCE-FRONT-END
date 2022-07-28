@@ -29,8 +29,8 @@ const dashboard: React.FC = () => {
         <link rel="shortcut icon" href="icons/logo.ico"/>    
       </Head>
       <LayoutDashboard>
-        <Card Title="Cardápio Berçário" Date="06/07/2022" Link="menus/bercario.xlsx"/>
-        <Card Title="Cardápio Julho" Date="06/07/2022" Link="menus/julho.xlsx"/>
+        <Card Title="Cardápio Berçário" Date="27/07/2022" Link="menus/bercario.xlsx"/>
+        <Card Title="Cardápio Agosto" Date="27/07/2022" Link="menus/agosto.xlsx"/>
       </LayoutDashboard>
     </>
   );
